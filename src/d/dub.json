@@ -1,0 +1,22 @@
+{
+    "name": "grpc",
+    "description": "D runtime library for gRPC",
+    "authors": ["Dragoş Carp"],
+    "license": "https://github.com/dcarp/protobuf-d/blob/master/LICENSE.md",
+    "targetType": "library",
+    "targetPath": "build",
+    "workingDirectory": "build",
+    "configurations": [
+        {
+            "name": "grpc",
+            "targetType": "library"
+        },
+        {
+            "name": "unittest",
+            "targetType": "executable",
+            "dflags": ["-main"],
+            "sourcePaths": ["test"],
+            "mainSourceFile": "test/basic.d"
+        }
+    ]
+}
